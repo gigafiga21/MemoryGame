@@ -1,6 +1,8 @@
 # Memory game
 Simple beautifully designed card game to improve your memory and abilities of perception. Written as an application for website on pure JS/CSS.
 
+![Game menu](https://gigafiga21.000webhostapp.com/MemoryGame/GitHub/Menu.png)
+
 ### Usage
 There are 2 ways to run programme:
 - Go to the website [MemoryGame](https://gigafiga21.000webhostapp.com/MemoryGame/bundle.html)
