@@ -1,43 +1,43 @@
-.CARD__CONTAINER
+.card__container
 {
-    POSITION: ABSOLUTE;
-    HEIGHT: 100%;
-    PERSPECTIVE: 1000PX;
-    TRANSFORM: ROTATE(0DEG);
-    TRANSFORM-ORIGIN: CENTER BOTTOM;
-    TRANSITION: TOP 1S, LEFT 1S, HEIGHT 1S, OPACITY 1S, TRANSFORM 1S;
+    position: absolute;
+    height: 100%;
+    perspective: 1000px;
+    transform: rotate(0deg);
+    transform-origin: center bottom;
+    transition: top 1s, left 1s, height 1s, opacity 1s, transform 1s;
 }
 
-.CARD__COVER
+.card__cover
 {
-    POSITION: RELATIVE;
-    DISPLAY: FLEX;
-    WIDTH: AUTO;
-    HEIGHT: 100%;
-    TOP: 0PX;
-    TRANSITION: TRANSFORM 0.2S;
-    BACKFACE-VISIBILITY: HIDDEN;
-    BORDER-RADIUS: 15PX;
-    BOX-SHADOW: 0PX 0PX 1PX 1PX RGBA(0, 0, 0, 0.1);
+    position: relative;
+    display: flex;
+    width: auto;
+    height: 100%;
+    top: 0px;
+    transition: transform 0.2s;
+    backface-visibility: hidden;
+    border-radius: 15px;
+    box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.1);
 }
 
-.CARD__BACK
+.card__back
 {
-    POSITION: ABSOLUTE;
-    TRANSFORM: ROTATEY(0DEG);
+    position: absolute;
+    transform: rotatey(0deg);
 }
 
-.CARD__FRONT
+.card__front
 {
-    TRANSFORM: ROTATEY(-180DEG);
+    transform: rotatey(-180deg);
 }
 
-.CARD__CONTAINER--TURNED .CARD__BACK
+.card__container--turned .card__back
 {
-    TRANSFORM: ROTATEY(180DEG);
+    transform: rotatey(180deg);
 }
 
-.CARD__CONTAINER--TURNED .CARD__FRONT
+.card__container--turned .card__front
 {
-    TRANSFORM: ROTATEY(0DEG);
+    transform: rotatey(0deg);
 }

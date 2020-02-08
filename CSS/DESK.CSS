@@ -1,5 +1,5 @@
-.DESK__CONTAINER
+.desk__container
 {
-    DISPLAY: FLEX;
-    POSITION: RELATIVE;
+    display: flex;
+    position: relative;
 }

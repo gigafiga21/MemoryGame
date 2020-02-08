@@ -1,110 +1,110 @@
-:ROOT
+:root
 {
-    --BACKGROUND: #207934;
-    --BACKGROUNDSHADOW: #1C6A2E;
-    --TEXTCOLOR: #DDEAE0;
-    --TRANSITIONHIDING: OPACITY 0.2S;
+    --background: #207934;
+    --background-shadow: #1c6a2e;
+    --text-color: #ddeae0;
+    --transition-hiding: opacity 0.2s;
 }
 
-.MEMORY__CONTAINER
+.memory__container
 {
-    ALIGN-ITEMS: CENTER;
-    JUSTIFY-CONTENT: CENTER;
-    MIN-HEIGHT: 390PX;
-    WIDTH: 100%;
-    HEIGHT: 100%;
-    BACKGROUND: RADIAL-GRADIENT(VAR(--BACKGROUND), VAR(--BACKGROUNDSHADOW));
-    COLOR: VAR(--TEXTCOLOR);
-    FONT-SIZE: 17PX;
-    FONT-FAMILY: "-APPLE-SYSTEM", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "sans-serif";
+    align-items: center;
+    justify-content: center;
+    min-height: 390px;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(var(--background), var(--background-shadow));
+    color: var(--text-color);
+    font-size: 17px;
+    font-family: "-apple-system", "blinkmacsystemfont", "segoe ui", "roboto", "oxygen", "ubuntu", "cantarell", "fira sans", "droid sans", "helvetica neue", "sans-serif";
 }
 
-.MEMORY__CONTAINER--PAUSE .MEMORY__GAME
+.memory__container--pause .memory__game
 {
-    DISPLAY: NONE;
+    display: none;
 }
 
-.MEMORY__STATUSBAR
+.memory__statusbar
 {
-    FLEX-DIRECTION: ROW;
-    MARGIN: 5PX;
-    FONT-SIZE: 20PX;
+    flex-direction: row;
+    margin: 5px;
+    font-size: 20px;
 }
 
-.MEMORY__STATUSBAR DIV
+.memory__statusbar div
 {
-    ALIGN-ITEMS: CENTER;
+    align-items: center;
 }
 
-.MEMORY__STATUSBAR DIV
+.memory__statusbar div
 {
-    DISPLAY: FLEX;
-    OPACITY: 0;
-    TRANSITION: VAR(--TRANSITIONHIDING);
+    display: flex;
+    opacity: 0;
+    transition: var(--transition-hiding);
 }
 
-.MEMORY__FIELD
+.memory__field
 {
-    BORDER: NONE;
-    BORDER-SPACING: 5PX;
+    border: none;
+    border-spacing: 5px;
 }
 
-.MEMORY__FIELD TD
+.memory__field td
 {
-    POSITION: RELATIVE;
+    position: relative;
 }
 
-.MEMORY__CONTAINER--GAME .MEMORY__MENU
+.memory__container--game .memory__menu
 {
-    DISPLAY: NONE;
+    display: none;
 }
 
-.MEMORY__MENU
+.memory__menu
 {
-    ALIGN-ITEMS: CENTER;
+    align-items: center;
 }
 
-.MEMORY__CARDSCONTAINER
+.memory__cardscontainer
 {
-    POSITION: ABSOLUTE;
+    position: absolute;
 }
 
-.MEMORY__DESKCONTAINER
+.memory__deskcontainer
 {
-    OPACITY: 0;
-    TRANSITION: VAR(--TRANSITIONHIDING);
+    opacity: 0;
+    transition: var(--transition-hiding);
 }
 
-.MEMORY__HEADLINE
+.memory__headline
 {
-    MARGIN: 20PX 0PX;
-    OPACITY: 0;
-    FONT-SIZE: 30PX;
-    TRANSITION: VAR(--TRANSITIONHIDING);
+    margin: 20px 0px;
+    opacity: 0;
+    font-size: 30px;
+    transition: var(--transition-hiding);
 }
 
-.MEMORY__BUTTON
+.memory__button
 {
-    TEXT-ALIGN: CENTER;
-    PADDING: 10PX 20PX;
-    MARGIN: 5PX;
-    COLOR: VAR(--BACKGROUND);
-    FONT-SIZE: 17;
-    OPACITY: 0;
-    BORDER: NONE;
-    BORDER-RADIUS: 10PX;
-    BACKGROUND: VAR(--TEXTCOLOR);
-    TRANSITION: VAR(--TRANSITIONHIDING), COLOR 0.2S;
+    text-align: center;
+    padding: 10px 20px;
+    margin: 5px;
+    color: var(--background);
+    font-size: 17;
+    opacity: 0;
+    border: none;
+    border-radius: 10px;
+    background: var(--text-color);
+    transition: var(--transition-hiding), color 0.2s;
 }
 
-.MEMORY__BUTTON:FOCUS
+.memory__button:focus
 {
-    OUTLINE: NONE;
-    BACKGROUND: TRANSPARENT;
-    COLOR: VAR(--TEXTCOLOR);
+    outline: none;
+    background: transparent;
+    color: var(--text-color);
 }
 
-.MEMORY__BUTTON:DISABLED
+.memory__button:disabled
 {
-    FILTER: OPACITY(70%);
+    filter: opacity(70%);
 }

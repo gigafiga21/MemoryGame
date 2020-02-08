@@ -1,17 +1,17 @@
-.HIDDEN
+.hidden
 {
-    DISPLAY: NONE !IMPORTANT;
+    display: none !important;
 }
 
-.WRAP
+.wrap
 {
-    DISPLAY: FLEX;
-    FLEX-DIRECTION: COLUMN;
-    POSITION: RELATIVE;
+    display: flex;
+    flex-direction: column;
+    position: relative;
 }
 
-.DIVIDER
+.divider
 {
-    DISPLAY: FLEX;
-    FLEX-GROW: 1;
+    display: flex;
+    flex-grow: 1;
 }
