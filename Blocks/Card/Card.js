@@ -1,3 +1,8 @@
+import { triggerCSS, getRelateBoundingRect } from "../../Libraries/Common/Common.js";
+import ClassEvents from "../../Libraries/ClassEvents/ClassEvents.js";
+
+import "./Card.css";
+
 /**
  * Class of a gaming card
  * @param {Object} properties            - settings of class
@@ -8,7 +13,7 @@
  * @param {Element} properties.parent    - where to place DOM of the class
  * @param {Element} properties.gameField - the most top element where is allow to place card
  */
-function Card(properties)
+export default function Card(properties)
 {
     /**
      * State of non-static class elements

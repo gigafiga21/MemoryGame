@@ -1,3 +1,12 @@
+import { popRandom, triggerCSS, toggleHideElements, getRelateBoundingRect } from "../../Libraries/Common/Common.js";
+import Card from "../../Blocks/Card/Card.js";
+import Desk from "../../Blocks/Desk/Desk.js";
+
+import "../../Libraries/Common/Common.css";
+import "./Memory.css";
+
+Array.prototype.popRandom = popRandom;
+
 /**
  * Class of a memory game
  * @param {Object} properties            - settings of class
@@ -666,3 +675,52 @@ function MemoryGame(properties)
     resize();
     toMenu();
 }
+
+window.onload = function()
+{
+    var covers =
+    {
+        front:
+        [
+            "Assets/Images/cards/clubs.6.svg",
+            "Assets/Images/cards/clubs.7.svg",
+            "Assets/Images/cards/clubs.8.svg",
+            "Assets/Images/cards/clubs.9.svg",
+            "Assets/Images/cards/clubs.10.svg",
+            "Assets/Images/cards/clubs.jack.svg",
+            "Assets/Images/cards/clubs.queen.svg",
+            "Assets/Images/cards/clubs.king.svg",
+            "Assets/Images/cards/clubs.ace.svg",
+            "Assets/Images/cards/spades.6.svg",
+            "Assets/Images/cards/spades.7.svg",
+            "Assets/Images/cards/spades.8.svg",
+            "Assets/Images/cards/spades.9.svg",
+            "Assets/Images/cards/spades.10.svg",
+            "Assets/Images/cards/spades.jack.svg",
+            "Assets/Images/cards/spades.queen.svg",
+            "Assets/Images/cards/spades.king.svg",
+            "Assets/Images/cards/spades.ace.svg",
+            "Assets/Images/cards/hearts.6.svg",
+            "Assets/Images/cards/hearts.7.svg",
+            "Assets/Images/cards/hearts.8.svg",
+            "Assets/Images/cards/hearts.9.svg",
+            "Assets/Images/cards/hearts.10.svg",
+            "Assets/Images/cards/hearts.jack.svg",
+            "Assets/Images/cards/hearts.queen.svg",
+            "Assets/Images/cards/hearts.king.svg",
+            "Assets/Images/cards/hearts.ace.svg",
+            "Assets/Images/cards/diamonds.6.svg",
+            "Assets/Images/cards/diamonds.7.svg",
+            "Assets/Images/cards/diamonds.8.svg",
+            "Assets/Images/cards/diamonds.9.svg",
+            "Assets/Images/cards/diamonds.10.svg",
+            "Assets/Images/cards/diamonds.jack.svg",
+            "Assets/Images/cards/diamonds.queen.svg",
+            "Assets/Images/cards/diamonds.king.svg",
+            "Assets/Images/cards/diamonds.ace.svg"
+        ],
+        back: "Assets/Images/cards/back.svg"
+    };
+
+    var game = new MemoryGame({parent: document.body, cardCovers: covers, coverSize: {height: 320, width: 224}});
+};

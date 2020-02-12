@@ -1,3 +1,9 @@
+import { triggerCSS } from "../../Libraries/Common/Common.js";
+import Card from "../Card/Card.js";
+import ClassEvents from "../../Libraries/ClassEvents/ClassEvents.js";
+
+import "./Desk.css";
+
 /**
  * Class of the card pack (deck)
  * @param {Object} properties         - settings of the class
@@ -5,7 +11,7 @@
  * @param {Object} properties.size    - size of the card desk, 100% of parent in DOM if not given
  * @param {Element} properties.parent - where to place deck DOMElement
  */
-function Desk(properties)
+export default function Desk(properties)
 {
     /**
      * Cards in the deck
