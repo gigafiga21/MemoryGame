@@ -4,7 +4,7 @@
  * @param {Element} parent  - element to create coordinate grid
  * @return {Object} coords
  */
-function getRelateBoundingRect(element, parent)
+export function getRelateBoundingRect(element, parent)
 {
     var elementScreenCoords = element.getBoundingClientRect(),
         parentScreenCoords = parent.getBoundingClientRect(),
@@ -31,7 +31,7 @@ function getRelateBoundingRect(element, parent)
  * @param {Boolean} value     - if true hides element else - unhides
  * @param {Function} follower - function runs after everithing done
  */
-function toggleHideElements(elements, duration, value, follower)
+export function toggleHideElements(elements, duration, value, follower)
 {
     function main(number, elements, duration, value, follower)
     {
@@ -55,7 +55,7 @@ function toggleHideElements(elements, duration, value, follower)
 /**
  * Parses quant of DOM changes
  */
-function triggerCSS()
+export function triggerCSS()
 {
     document.body.offsetWidth;
 }
@@ -64,7 +64,7 @@ function triggerCSS()
  * Deletes element on the random position from array
  * @return {*} - deleted element
  */
-Array.prototype.popRandom = function()
+export function popRandom()
 {
     var index = Math.floor(Math.random() * (this.length)),
         random = this[index];

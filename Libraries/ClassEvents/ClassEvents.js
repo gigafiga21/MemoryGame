@@ -4,7 +4,7 @@
  * @param {Array} properties.types        - types of events
  * @param {Element|null} properties.event - target element and object passing to the event listener
  */
-function ClassEvents(properties)
+export default function ClassEvents(properties)
 {
     /**
      * Object with event types and listeners
