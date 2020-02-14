@@ -1,0 +1,49 @@
+.menu__menu
+{
+    align-items: center;
+}
+
+.menu__cardscontainer
+{
+    position: absolute;
+}
+
+.menu__deskcontainer
+{
+    opacity: 0;
+    transition: var(--transition-hiding);
+}
+
+.menu__headline
+{
+    margin: 20px 0px;
+    opacity: 0;
+    font-size: 30px;
+    transition: var(--transition-hiding);
+}
+
+.menu__button
+{
+    text-align: center;
+    padding: 10px 20px;
+    margin: 5px;
+    color: var(--background);
+    font-size: 17;
+    opacity: 0;
+    border: none;
+    border-radius: 10px;
+    background: var(--text-color);
+    transition: var(--transition-hiding), color 0.2s;
+}
+
+.menu__button:focus
+{
+    outline: none;
+    background: transparent;
+    color: var(--text-color);
+}
+
+.menu__button:disabled
+{
+    filter: opacity(70%);
+}
