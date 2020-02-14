@@ -1,0 +1,27 @@
+:root
+{
+    --background: #207934;
+    --background-shadow: #1c6a2e;
+    --text-color: #ddeae0;
+    --transition-hiding: opacity 0.2s;
+}
+
+body
+{
+    position: relative;
+    margin: 0px;
+    align-items: center;
+    justify-content: center;
+    min-height: 390px;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(var(--background), var(--background-shadow));
+    color: var(--text-color);
+    font-size: 17px;
+    font-family: "-apple-system", "blinkmacsystemfont", "segoe ui", "roboto", "oxygen", "ubuntu", "cantarell", "fira sans", "droid sans", "helvetica neue", "sans-serif";
+}
+
+.screen-block
+{
+    position: absolute;
+}
